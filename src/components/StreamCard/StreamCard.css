@@ -1,0 +1,118 @@
+.stream-card {
+  background: var(--white);
+  border-radius: var(--radius-xl);
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  display: block;
+}
+
+.stream-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.stream-card:hover::before {
+  opacity: 1;
+}
+
+.stream-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-xl);
+}
+
+.stream-card:hover .stream-card-title,
+.stream-card:hover .stream-card-description,
+.stream-card:hover .stream-card-count {
+  color: var(--white);
+  position: relative;
+  z-index: 1;
+}
+
+.stream-card-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  color: var(--white);
+  transition: var(--transition);
+  position: relative;
+  z-index: 1;
+}
+
+.stream-card:hover .stream-card-icon {
+  transform: scale(1.1);
+  background: var(--white);
+  color: var(--primary-color);
+}
+
+.stream-card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 0.75rem;
+  transition: var(--transition);
+}
+
+.stream-card-description {
+  color: var(--gray-500);
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.stream-card-count {
+  font-size: 0.875rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  display: block;
+  transition: var(--transition);
+}
+
+.stream-card:hover .stream-card-count {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.stream-card-arrow {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  color: var(--white);
+  transition: var(--transition);
+  z-index: 1;
+}
+
+.stream-card:hover .stream-card-arrow {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (max-width: 768px) {
+  .stream-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .stream-card-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .stream-card-title {
+    font-size: 1.25rem;
+  }
+}
