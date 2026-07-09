@@ -4,26 +4,20 @@ A comprehensive React application that helps students decide what to study after
 
 ## Features
 
-- Modern, responsive blue and white UI design
-- Dark/Light mode toggle
-- Comprehensive course information for After 10th and After Intermediate
-- Search and filter functionality
-- Detailed course pages with:
-  - Course overview
-  - Subjects covered
-  - Eligibility criteria
-  - Skills required
-  - Higher education options
-  - Career opportunities
-  - Entrance exams
-  - Top colleges
-  - Expected salary
-  - FAQs
-- Student testimonials
-- Contact form
-- About page
-- 404 Not Found page
-- Scroll to top button
+- ## Features
+
+- Modern and responsive blue & white UI
+- Career guidance after 10th and Intermediate
+- Stream-wise navigation (MPC, BiPC, MEC, CEC, etc.)
+- Detailed course information
+- Career opportunities
+- Higher education options
+- Entrance exams
+- Top colleges
+- Expected salary information
+- Skills required for each career
+- Search and filter courses
+- Responsive design for desktop and mobile
 
 ## Tech Stack
 
